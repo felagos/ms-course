@@ -1,10 +1,6 @@
 package com.felakes.billing.infrastructure.data.entiy;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import lombok.Data;
 
@@ -16,5 +12,14 @@ public class BillingEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @Column(name = "customer_id")
+    private Long customerId;
+
+    private String number;
+
+    private String detail;
+
+    private Double amount;
 
 }

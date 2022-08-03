@@ -1,5 +1,6 @@
 package com.felakes.billing.infrastructure.controller;
 
+import com.felakes.billing.domain.exception.NotFoundBillingException;
 import com.felakes.billing.infrastructure.mapper.BillingMapper;
 import com.felakes.billing.infrastructure.utils.Constants;
 import com.felakes.billing.application.billing.BillingService;
@@ -20,5 +21,18 @@ public class BillingController {
 
     @Autowired
     private BillingMapper mapper;
+
+    public ResponseEntity findById(Long id) {
+        try {
+            var billing = this.customerService.findById(id);
+
+            return new ResponseEntity(this.mapper.toDto(billing), HttpStatus.OK);
+
+        } catch (NotFoundBillingException ex) {
+            return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+        } catch (Exception ex) {
+            return new ResponseEntity<>(ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 
 }

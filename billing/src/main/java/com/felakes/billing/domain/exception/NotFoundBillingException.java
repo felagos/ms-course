@@ -1,8 +1,8 @@
 package com.felakes.billing.domain.exception;
 
-public class BillingException extends Exception {
+public class NotFoundBillingException extends Exception {
 
-    public BillingException(String message) {
+    public NotFoundBillingException(String message) {
         super(message);
     }
 

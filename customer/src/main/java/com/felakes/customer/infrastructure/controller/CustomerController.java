@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(name = API_VERSION + API_CUSTOMER)
+@RequestMapping(value = API_VERSION + API_CUSTOMER)
 public class CustomerController {
 
     @Autowired
@@ -23,8 +23,8 @@ public class CustomerController {
     @Autowired
     private CustomerMapper mapper;
 
-    @GetMapping(name = "/{id}")
-    public ResponseEntity getUser(@PathVariable("id") Long id) {
+    @GetMapping(value = "/{id}")
+    public ResponseEntity findById(@PathVariable("id") Long id) {
         try {
             var response = this.customerService.findById(id);
             var customer = this.mapper.toDto(response);
@@ -35,8 +35,8 @@ public class CustomerController {
         }
     }
 
-    @GetMapping()
-    public ResponseEntity findById() {
+    @GetMapping
+    public ResponseEntity findAll() {
         try {
             var response = this.customerService.findAll();
             var customers = this.mapper.toDtoList(response);

@@ -1,6 +1,6 @@
-package com.felakes.infrastructure.data.repository;
+package com.felakes.customer.infrastructure.data.repository;
 
-import com.felakes.infrastructure.data.entiy.CustomerEntity;
+import com.felakes.customer.infrastructure.data.entiy.CustomerEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,8 +1,8 @@
-package com.felakes.application.customer;
+package com.felakes.customer.application;
 
-import com.felakes.domain.Customer;
-import com.felakes.domain.exception.CustomerException;
-import com.felakes.domain.repository.CustomerRepository;
+import com.felakes.customer.domain.exception.CustomerException;
+import com.felakes.customer.domain.Customer;
+import com.felakes.customer.domain.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

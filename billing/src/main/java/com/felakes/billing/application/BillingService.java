@@ -1,4 +1,4 @@
-package com.felakes.billing.application.billing;
+package com.felakes.billing.application;
 
 import com.felakes.billing.domain.Billing;
 import com.felakes.billing.domain.exception.NotFoundBillingException;

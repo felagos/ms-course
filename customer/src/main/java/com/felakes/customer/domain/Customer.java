@@ -1,4 +1,4 @@
-package com.felakes.domain;
+package com.felakes.customer.domain;
 
 import lombok.Data;
 

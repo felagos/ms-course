@@ -1,7 +1,7 @@
-package com.felakes.domain.repository;
+package com.felakes.customer.domain.repository;
 
-import com.felakes.domain.Customer;
-import com.felakes.domain.exception.CustomerException;
+import com.felakes.customer.domain.exception.CustomerException;
+import com.felakes.customer.domain.Customer;
 
 import java.util.List;
 

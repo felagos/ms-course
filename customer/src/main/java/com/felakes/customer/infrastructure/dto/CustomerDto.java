@@ -1,4 +1,4 @@
-package com.felakes.infrastructure.dto;
+package com.felakes.customer.infrastructure.dto;
 
 import lombok.Data;
 

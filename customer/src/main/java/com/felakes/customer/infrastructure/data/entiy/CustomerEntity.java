@@ -1,4 +1,4 @@
-package com.felakes.infrastructure.data.entiy;
+package com.felakes.customer.infrastructure.data.entiy;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,10 +1,10 @@
-package com.felakes.infrastructure.controller;
+package com.felakes.customer.infrastructure.controller;
 
-import static com.felakes.infrastructure.utils.Constants.API_CUSTOMER;
-import static com.felakes.infrastructure.utils.Constants.API_VERSION;
+import static com.felakes.customer.infrastructure.utils.Constants.API_CUSTOMER;
+import static com.felakes.customer.infrastructure.utils.Constants.API_VERSION;
 
-import com.felakes.application.customer.CustomerService;
-import com.felakes.infrastructure.mapper.CustomerMapper;
+import com.felakes.customer.application.CustomerService;
+import com.felakes.customer.infrastructure.mapper.CustomerMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

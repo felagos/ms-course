@@ -10,7 +10,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "customers")
+@Table(name = "products")
 public class ProductEntity {
 
     @Id
@@ -19,6 +19,6 @@ public class ProductEntity {
 
     private String name;
 
-    private String phone;
+    private String code;
     
 }

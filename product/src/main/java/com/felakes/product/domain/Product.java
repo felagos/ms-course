@@ -7,5 +7,5 @@ public class Product {
 
     private Long id;
     private String name;
-    private String phone;
+    private String code;
 }

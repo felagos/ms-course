@@ -4,6 +4,7 @@ import static com.felakes.product.infrastructure.utils.Constants.API_PRODUCT;
 import static com.felakes.product.infrastructure.utils.Constants.API_VERSION;
 
 import com.felakes.product.application.ProductService;
+import com.felakes.product.domain.exception.ProductNotFoundException;
 import com.felakes.product.infrastructure.mapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -30,8 +31,10 @@ public class ProductController {
             var customer = this.mapper.toDto(response);
 
             return new ResponseEntity<>(customer, HttpStatus.OK);
-        } catch (Exception ex) {
+        } catch (ProductNotFoundException ex) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (Exception ex) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.function.Supplier;
 
 @Service
 public class ProductDboRepository implements ProductRepository {
@@ -20,9 +21,10 @@ public class ProductDboRepository implements ProductRepository {
 
     @Override
     public Product findById(Long id) throws ProductNotFoundException {
-        var customer = this.repository.findById(id).orElseThrow(() -> new ProductNotFoundException("customer not found"));
+        var product = this.repository.findById(id)
+                .orElseThrow(() -> new ProductNotFoundException("product not found"));
 
-        return this.mapper.toDomain(customer);
+        return this.mapper.toDomain(product);
     }
 
     @Override

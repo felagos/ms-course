@@ -1,9 +1,9 @@
-package com.felakes.domain;
+package com.felakes.product.domain;
 
 import lombok.Data;
 
 @Data
-public class Customer {
+public class Product {
 
     private Long id;
     private String name;

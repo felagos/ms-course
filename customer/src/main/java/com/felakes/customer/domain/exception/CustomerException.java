@@ -1,4 +1,4 @@
-package com.felakes.customer.domain.exception;
+package com.felakes.domain.exception;
 
 public class CustomerException extends Exception {
 

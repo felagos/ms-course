@@ -1,4 +1,4 @@
-package com.felakes.customer.infrastructure.utils;
+package com.felakes.infrastructure.utils;
 
 public class Constants {
 

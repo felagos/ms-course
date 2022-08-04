@@ -1,8 +1,8 @@
-package com.felakes.customer.infrastructure.mapper;
+package com.felakes.infrastructure.mapper;
 
-import com.felakes.customer.domain.Customer;
-import com.felakes.customer.infrastructure.data.entiy.CustomerEntity;
-import com.felakes.customer.infrastructure.dto.CustomerDto;
+import com.felakes.domain.Customer;
+import com.felakes.infrastructure.data.entiy.CustomerEntity;
+import com.felakes.infrastructure.dto.CustomerDto;
 import org.mapstruct.Mapper;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.felakes.infrastructure.swagger;
+package com.felakes.product.infrastructure.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +15,7 @@ public class SpringFoxConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.felakes.infrastructure.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.felakes.product.infrastructure.controller"))
                 .build();
     }
 

@@ -1,11 +1,12 @@
-package com.felakes.domain;
+package com.felakes.product.infrastructure.dto;
 
 import lombok.Data;
 
 @Data
-public class Customer {
+public class ProductDto {
 
     private Long id;
     private String name;
     private String phone;
+
 }

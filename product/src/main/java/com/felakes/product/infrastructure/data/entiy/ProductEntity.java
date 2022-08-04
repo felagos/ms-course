@@ -1,4 +1,4 @@
-package com.felakes.infrastructure.data.entiy;
+package com.felakes.product.infrastructure.data.entiy;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,7 +11,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "customers")
-public class CustomerEntity {
+public class ProductEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
